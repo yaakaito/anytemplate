@@ -1,0 +1,48 @@
+{
+  "name": "template-react-spa",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "yaakaito@gmail.com",
+  "license": "UNLICENCED",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack --mode production",
+    "test": "jest --watch",
+    "clean": "rimraf dist && rimraf node_modules/.cache",
+    "lint": "eslint --ext .ts,.tsx ./src",
+    "typecheck": "tsc -p . --noEmit"
+  },
+  "devDependencies": {
+    "@types/css-modules": "1.0.0",
+    "@types/jest": "26.0.0",
+    "@types/react": "16.9.36",
+    "@types/react-dom": "16.9.8",
+    "@typescript-eslint/eslint-plugin": "3.2.0",
+    "@typescript-eslint/parser": "3.2.0",
+    "css-loader": "3.5.3",
+    "eslint": "7.4.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.20.3",
+    "html-webpack-plugin": "4.3.0",
+    "jest": "26.0.1",
+    "postcss-loader": "4.0.2",
+    "prettier": "2.0.5",
+    "rimraf": "3.0.2",
+    "style-loader": "1.2.1",
+    "ts-jest": "26.1.0",
+    "ts-loader": "7.0.5",
+    "typescript": "3.9.7",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.0"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "reflect-metadata": "0.1.13",
+    "ress": "2.0.4",
+    "tsyringe": "4.3.0"
+  }
+}

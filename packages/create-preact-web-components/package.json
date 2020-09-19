@@ -1,0 +1,34 @@
+{
+  "name": "create-preact-web-components",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "yaakaito@gmail.com",
+  "license": "UNLICENCED",
+  "private": true,
+  "scripts": {
+    "dev:rollup": "rollup -c rollup.config.js --watch",
+    "dev:esbuild": "nodemon --watch ./src --exec 'yarn build:esbuild'",
+    "build:rollup": "rollup -c rollup.config.js",
+    "build:esbuild": "esbuild ./src/index.tsx --bundle --minify --outfile=dist/index.esbuild.js",
+    "typecheck": "tsc -p . --noEmit"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.1",
+    "esbuild": "^0.7.1",
+    "nodemon": "^2.0.4",
+    "rollup": "^2.27.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.27.2",
+    "typescript": "3.9.7"
+  },
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "preact": "^10.4.8"
+  },
+  "nodemonConfig": {
+      "ingore": ["dist"],
+      "delay": "1000",
+      "ext": "js,jsx,ts,tsx,html,pcss"
+  }
+}

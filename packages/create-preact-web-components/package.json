@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@rollup/plugin-node-resolve": "9.0.0",
-    "preact": "10.4.8"
+    "preact": "10.5.3"
   },
   "nodemonConfig": {
       "ingore": ["dist"],

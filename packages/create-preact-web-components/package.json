@@ -19,7 +19,7 @@
     "rollup": "2.38.3",
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-terser": "7.0.2",
-    "rollup-plugin-typescript2": "0.28.0",
+    "rollup-plugin-typescript2": "0.30.0",
     "typescript": "4.1.4"
   },
   "dependencies": {

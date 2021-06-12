@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-alias": "3.1.1",
-    "esbuild": "0.7.21",
+    "esbuild": "0.12.8",
     "nodemon": "2.0.4",
     "rollup": "2.44.0",
     "rollup-plugin-commonjs": "10.1.0",
